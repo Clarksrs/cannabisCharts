@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cannabis Terpene Chart</title>
+<style>
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+</style>
+</head>
+<body>
+
+<p><strong>Click the headers to sort the table.</strong></p>
+<p>The first time you click, the sorting direction is ascending (A to Z).</p>
+<p>Click again, and the sorting direction will be descending (Z to A):</p>
+
+<table id="myTable">
+  <tr>
+   <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+    <th onclick="sortTable(0)">Terpene Name</th>
+    <th onclick="sortTable(1)">Scent</th>
+    <th onclick="sortTable(2)">Found In</th>
+    <th onclick="sortTable(3)">Properties</th>
+    <th onclick="sortTable(4)">Uses</th>
+    <th onclick="sortTable(5)">Strains</th>
+  </tr>
+
+<!--Bisabolo-->
+  <tr>
+    <td>Bisabolol</td>
+    <td>Floral</td>
+    <td></td>
+    <td>Anti-Inflammatory<br>Anti-Irritant<br>Anti-Microbial</td>
+    <td>Cancer<br>Skin Lesion</td>
+    <td></td>
+  </tr>
+
+<!--Borneol-->
+<tr>
+    <td>Borneol</td>
+    <td>Mint</td>
+    <td></td>
+    <td>Anti-Inflammatory<br>Antinociceptive</td>
+    <td>Eyesight<br>Pain Relief</td>
+    <td></td>
+  </tr>
+
+<!--Camphene-->
+<tr>
+    <td>Camphene</td>
+    <td>Fir Needles<br>Musky Earth</td>
+    <td></td>
+    <td>Anti-Oxidant</td>
+    <td>Cardiovascular Diseases</td>
+    <td></td>
+  </tr>
+
+<!--Caryophyllene-->
+  <tr>
+    <td>Caryophyllene</td>
+    <td>Pepper<br>Spicy<br>Woody<br>Cloves</td>
+    <td>Black Pepper<br>Cloves<br>Cinnamon</td>
+    <td>Anti-Bacterial<br>Anti-Inflammatory<br>Anti-Fungal</td>
+    <td>Insomnia<br>Muscle Spasms<br>Pain Relief</td>
+    <td>Fire OG<br>Original Glue<br>GSC</td>
+  </tr>
+
+<!--Delta 3 Carene-->
+  <tr>
+    <td>Dealta 3 Carene</td>
+    <td>Pine<br>Rosemary</td>
+    <td></td>
+    <td>Anti-Inflammatory<br>Bone Stimmulant</td>
+    <td>Memory</td>
+    <td></td>
+  </tr>
+
+<!--Eucalyptol-->
+<tr>
+    <td>Eucalyptol</td>
+    <td>Mint</td>
+    <td></td>
+    <td>Anti-Bacterial<br>Anti-Fungal</td>
+    <td>Alzheimer's<br>Pain Relief</td>
+    <td></td>
+  </tr>
+
+<!--Geraniol-->
+<tr>
+    <td>Geraniol</td>
+    <td>Peach<br>Rose Grass</td>
+    <td></td>
+    <td>Anti-Cancer<br>Anti-Oxidant<br>Neuroprotectant</td>
+    <td>Cancer<br>Pain Relief</td>
+    <td></td>
+  </tr>
+
+<!--Humulene-->
+  <tr>
+    <td>Humulene</td>
+    <td>Hops<br>Coriander<br>Cloves<br>Basil</td>
+    <td>Black Pepper<br>Cloves<br>Cinnamon</td>
+    <td>Anti-Bacterial<br>Anti-Inflammatory<br>Anti-Tumor Effects</td>
+    <td>Cancer<br>Infections<br>Appetite Suppression</td>
+    <td>Black Cherry OG<br>Death Star<br>GSC</td>
+  </tr>
+
+<!--Limonene-->
+  <tr>
+    <td>Limonene</td>
+    <td>Citrus</td>
+    <td>Fruit Rinds<br>Rosemary<br>Juniper<br>Peppermint</td>
+    <td>Anti-Anxiety<br>Anti-Cancer<br>Digestion<br>Gallstones</td>
+    <td>Liver Detoxification<br>Weight Loss<br>Sleep Aid</td>
+    <td>Hindu Kush<br>Lemon G<br>Strawberry Banana</td>
+  </tr>
+
+  
+
+<!--Linalool-->
+<tr>
+    <td>Linalool</td>
+    <td>Floral</td>
+    <td>Lavender</td>
+    <td>Anti-Anxiety<br>Anti-Epileptic<br>Anti-Psychotic<br>Pain Killing</td>
+    <td>Depression<br>Convulsions<br>Insomnia<br>Pain Relief</td>
+    <td>Kosher Kush<br>Romulan<br>Sour Kush</td>
+  </tr>
+
+<!--Myrcene-->
+<tr>
+    <td>Myrcene</td>
+    <td>Cloves<br>Earthy<br>Herbal</td>
+    <td>Mango<br>Lemongrass<br>Thyme<br>Hops</td>
+    <td>Relaxing<br>Sedating</td>
+    <td>Inflammation<br>Insomnia<br>Spasms<br>Pain</td>
+    <td>Granddaddy Purple<br>Amnesia<br>Trainwreck</td>
+  </tr>
+
+<!--Ocimene-->
+  <tr>
+    <td>Ocimene</td>
+    <td>Sweet<br>Herbal<br>Spicy</td>
+    <td>Mint<br>Parsley<br>Pepper<br>Basil<br>Mangos<br>Orchids</td>
+    <td></td>
+    <td></td>
+    <td>Sensi Star<br>Durban Poison<br>Silver Bubble</td>
+  </tr>
+
+<!--Pinene-->
+  <tr>
+    <td>Pinene</td>
+    <td>Pine Trees</td>
+    <td>Pine Needles<br>Rosemary<br>Basil<br>Parslet<br>Dill</td>
+    <td>Anti-Depression<br>Anti-Inflammatory<br>Anti-Microbial</td>
+    <td>Asthma<br>Bronchitis<br>Cancer<br>Depression<br>Memory<br>Mental Alertness</td>
+    <td>Purple Kush<br>Bay Dream<br>AK-47</td>
+  </tr>
+
+<!--Phytol-->
+    <tr>
+        <td>Phytol</td>
+        <td>Balsamic<br>Floral</td>
+        <td></td>
+        <td>Anti-Insomnia<br>Immunosuppressant</td>
+        <td>Reduces Itching<br>Sleep Aid<br>Wound Healing</td>
+        <td></td>
+      </tr>
+
+<!--Terpinolene-->
+    <tr>
+        <td>Terpinolene</td>
+        <td>Pine<br>Floral<br>Herbal</td>
+        <td>Nutmeg<br>Tea Tree<br>Conifers<br>Apples<br>Cumin<br>Lilacs</td>
+        <td>Anti-Bacterial<br>Anti-Fungal<br>Anti-Insomnia<br>Antiseptic</td>
+        <td>Cancer<br>Heart Disease<br>Sleep Aid</td>
+        <td></td>
+      </tr>
+
+<!--Trans-nerolidol-->
+<tr>
+    <td>Trans-nerlidol</td>
+    <td>Citrus<br>Rose</td>
+    <td></td>
+    <td>Anti-Cancer<br>Anti-Microbial<br>Anti-Oxidant<br>Anti-Parasitic</td>
+    <td>Relaxing<br>Skin Lesion</td>
+    <td></td>
+  </tr>
+  
+<!--Valencene-->
+    <tr>
+        <td>Valencene</td>
+        <td>Sweet Citrus</td>
+        <td></td>
+        <td>Anti-Inflammatory<br>Anti-Meslanogenesis<br>AntiAllergic</td>
+        <td>Memory<br>Skin Lesion</td>
+        <td></td>
+      </tr>
+
+</table>
+
+<!--Javascript-->
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
