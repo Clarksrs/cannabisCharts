@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cannabis Landraces</title>
+<title>Cannabis Terpene Chart</title>
 <style>
 table {
   border-spacing: 0;
@@ -25,194 +25,196 @@ tr:nth-child(even) {
 </head>
 <body>
 
+<p><strong>Click the headers to sort the table.</strong></p>
+<p>The first time you click, the sorting direction is ascending (A to Z).</p>
+<p>Click again, and the sorting direction will be descending (Z to A):</p>
+
 <table id="myTable">
   <tr>
    <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-    <th onclick="sortTable(0)">Name</th>
-    <th onclick="sortTable(1)">Country</th>
-    <th onclick="sortTable(2)">Plant Characteristics</th>
-    <th onclick="sortTable(3)">Effect</th>
-    <th onclick="sortTable(4)">Terpene Profile</th>
+    <th onclick="sortTable(0)">Terpene Name</th>
+    <th onclick="sortTable(1)">Scent</th>
+    <th onclick="sortTable(2)">Found In</th>
+    <th onclick="sortTable(3)">Properties</th>
+    <th onclick="sortTable(4)">Uses</th>
+    <th onclick="sortTable(5)">Strains</th>
   </tr>
 
+<!--Bisabolo-->
   <tr>
-    <td>Columbian Gold</td>
-    <td>Columbia</td>
+    <td>Bisabolol</td>
+    <td>Floral</td>
     <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Acapulco Gold</td>
-    <td>Mexico</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Inflammatory<br>Anti-Irritant<br>Anti-Microbial</td>
+    <td>Cancer<br>Skin Lesion</td>
     <td></td>
   </tr>
 
-  <tr>
-    <td>Aceh</td>
-    <td>Indonesia</td>
+<!--Borneol-->
+<tr>
+    <td>Borneol</td>
+    <td>Mint</td>
     <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Kush</td>
-    <td>India(North)</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Inflammatory<br>Antinociceptive</td>
+    <td>Eyesight<br>Pain Relief</td>
     <td></td>
   </tr>
 
-  <tr>
-    <td>Lamb's Bread</td>
-    <td>Jamacia</td>
+<!--Camphene-->
+<tr>
+    <td>Camphene</td>
+    <td>Fir Needles<br>Musky Earth</td>
     <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Panama Red</td>
-    <td>Panama</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Oxidant</td>
+    <td>Cardiovascular Diseases</td>
     <td></td>
   </tr>
 
+<!--Caryophyllene-->
   <tr>
+    <td>Caryophyllene</td>
+    <td>Pepper<br>Spicy<br>Woody<br>Cloves</td>
+    <td>Black Pepper<br>Cloves<br>Cinnamon</td>
+    <td>Anti-Bacterial<br>Anti-Inflammatory<br>Anti-Fungal</td>
+    <td>Insomnia<br>Muscle Spasms<br>Pain Relief</td>
+    <td>Fire OG<br>Original Glue<br>GSC</td>
+  </tr>
+
+<!--Delta 3 Carene-->
+  <tr>
+    <td>Dealta 3 Carene</td>
+    <td>Pine<br>Rosemary</td>
     <td></td>
-    <td>Lebanon</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Inflammatory<br>Bone Stimmulant</td>
+    <td>Memory</td>
     <td></td>
   </tr>
 
-  <tr>
+<!--Eucalyptol-->
+<tr>
+    <td>Eucalyptol</td>
+    <td>Mint</td>
     <td></td>
-    <td>Malawi</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td>Morocco</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Bacterial<br>Anti-Fungal</td>
+    <td>Alzheimer's<br>Pain Relief</td>
     <td></td>
   </tr>
 
-  <tr>
+<!--Geraniol-->
+<tr>
+    <td>Geraniol</td>
+    <td>Peach<br>Rose Grass</td>
     <td></td>
-    <td>Nepal</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Thai(Thai Stick)</td>
-    <td>Thailand</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Cancer<br>Anti-Oxidant<br>Neuroprotectant</td>
+    <td>Cancer<br>Pain Relief</td>
     <td></td>
   </tr>
 
+<!--Humulene-->
   <tr>
-    <td>Chocolate Thai</td>
-    <td>Thailand</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Humulene</td>
+    <td>Hops<br>Coriander<br>Cloves<br>Basil</td>
+    <td>Black Pepper<br>Cloves<br>Cinnamon</td>
+    <td>Anti-Bacterial<br>Anti-Inflammatory<br>Anti-Tumor Effects</td>
+    <td>Cancer<br>Infections<br>Appetite Suppression</td>
+    <td>Black Cherry OG<br>Death Star<br>GSC</td>
   </tr>
 
+<!--Limonene-->
   <tr>
-    <td>Durban Poison</td>
-    <td>South Africa</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Limonene</td>
+    <td>Citrus</td>
+    <td>Fruit Rinds<br>Rosemary<br>Juniper<br>Peppermint</td>
+    <td>Anti-Anxiety<br>Anti-Cancer<br>Digestion<br>Gallstones</td>
+    <td>Liver Detoxification<br>Weight Loss<br>Sleep Aid</td>
+    <td>Hindu Kush<br>Lemon G<br>Strawberry Banana</td>
   </tr>
 
-  <tr>
-    <td>Kilimanjaro</td>
-    <td>Tanzia</td>
-    <td></td>
-    <td></td>
-    <td></td>
+  
+
+<!--Linalool-->
+<tr>
+    <td>Linalool</td>
+    <td>Floral</td>
+    <td>Lavender</td>
+    <td>Anti-Anxiety<br>Anti-Epileptic<br>Anti-Psychotic<br>Pain Killing</td>
+    <td>Depression<br>Convulsions<br>Insomnia<br>Pain Relief</td>
+    <td>Kosher Kush<br>Romulan<br>Sour Kush</td>
   </tr>
 
-  <tr>
-    <td>Swazi Gold</td>
-    <td>Swaziland</td>
-    <td></td>
-    <td></td>
-    <td></td>
+<!--Myrcene-->
+<tr>
+    <td>Myrcene</td>
+    <td>Cloves<br>Earthy<br>Herbal</td>
+    <td>Mango<br>Lemongrass<br>Thyme<br>Hops</td>
+    <td>Relaxing<br>Sedating</td>
+    <td>Inflammation<br>Insomnia<br>Spasms<br>Pain</td>
+    <td>Granddaddy Purple<br>Amnesia<br>Trainwreck</td>
   </tr>
 
+<!--Ocimene-->
   <tr>
-    <td>Afghani</td>
-    <td>Afghanistan</td>
+    <td>Ocimene</td>
+    <td>Sweet<br>Herbal<br>Spicy</td>
+    <td>Mint<br>Parsley<br>Pepper<br>Basil<br>Mangos<br>Orchids</td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>Sensi Star<br>Durban Poison<br>Silver Bubble</td>
   </tr>
 
+<!--Pinene-->
   <tr>
-    <td>Afghani</td>
-    <td>Afghanistan</td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>Pinene</td>
+    <td>Pine Trees</td>
+    <td>Pine Needles<br>Rosemary<br>Basil<br>Parslet<br>Dill</td>
+    <td>Anti-Depression<br>Anti-Inflammatory<br>Anti-Microbial</td>
+    <td>Asthma<br>Bronchitis<br>Cancer<br>Depression<br>Memory<br>Mental Alertness</td>
+    <td>Purple Kush<br>Bay Dream<br>AK-47</td>
   </tr>
 
-  <tr>
-    <td>Maui Wowie</td>
-    <td>USA (Hawaii)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+<!--Phytol-->
+    <tr>
+        <td>Phytol</td>
+        <td>Balsamic<br>Floral</td>
+        <td></td>
+        <td>Anti-Insomnia<br>Immunosuppressant</td>
+        <td>Reduces Itching<br>Sleep Aid<br>Wound Healing</td>
+        <td></td>
+      </tr>
 
-  <tr>
-    <td>Aloha!</td>
-    <td>USA (Hawaii)</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+<!--Terpinolene-->
+    <tr>
+        <td>Terpinolene</td>
+        <td>Pine<br>Floral<br>Herbal</td>
+        <td>Nutmeg<br>Tea Tree<br>Conifers<br>Apples<br>Cumin<br>Lilacs</td>
+        <td>Anti-Bacterial<br>Anti-Fungal<br>Anti-Insomnia<br>Antiseptic</td>
+        <td>Cancer<br>Heart Disease<br>Sleep Aid</td>
+        <td></td>
+      </tr>
 
-  <tr>
-    <td>Moloka'i Purpz</td>
-    <td>USA (Hawaii)</td>
+<!--Trans-nerolidol-->
+<tr>
+    <td>Trans-nerlidol</td>
+    <td>Citrus<br>Rose</td>
     <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td>Chitral Kush</td>
-    <td>Pakistan</td>
-    <td></td>
-    <td></td>
+    <td>Anti-Cancer<br>Anti-Microbial<br>Anti-Oxidant<br>Anti-Parasitic</td>
+    <td>Relaxing<br>Skin Lesion</td>
     <td></td>
   </tr>
-
-  <tr>
-    <td>Altai</td>
-    <td>Russia</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+  
+<!--Valencene-->
+    <tr>
+        <td>Valencene</td>
+        <td>Sweet Citrus</td>
+        <td></td>
+        <td>Anti-Inflammatory<br>Anti-Meslanogenesis<br>AntiAllergic</td>
+        <td>Memory<br>Skin Lesion</td>
+        <td></td>
+      </tr>
 
 </table>
 
+<!--Javascript-->
 <script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
